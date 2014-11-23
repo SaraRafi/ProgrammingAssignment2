@@ -43,7 +43,7 @@ makeCacheMatrix <- function(x = matrix())
        GetInverse = GetInverse)
 }
 
-# This function can be called on a matrix object created using the makeCacheMatrix function. it returns the cached inverse if it exists. if a cached inverse doesn't exist, it computes the matrix inverse and saves it on the cacheMatrix object.
+## This function can be called on a matrix object created using the makeCacheMatrix function. it returns the cached inverse if it exists. if a cached inverse doesn't exist, it computes the matrix inverse and saves it on the cacheMatrix object.
 cacheSolve <- function(x, ...) {
   inverse <- x$GetInverse()
     
